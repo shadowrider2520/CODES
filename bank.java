@@ -17,7 +17,7 @@ class Account {
 			balance-=amount;
 			System.out.println("withdrawed " + amount + " successfully");
 		}
-		else {System.out.println("insufficient balance puluthi");		}
+		else {System.out.println("insufficient balance");		}
 	}
 	void display() {
 		System.out.println("Accno: " + accno + "name: " + name + "balance: " + balance);
@@ -40,7 +40,7 @@ public class Main {
 		}
 		int choice;
 		do {
-			System.out.println("========PULUTHIGAL VANGI=====");
+			System.out.println("========Bank of Palkowa=====");
 			System.out.println("1.Deposit");
 			System.out.println("2. withdraw");
 			System.out.println("3. view Accounts");
@@ -59,7 +59,7 @@ public class Main {
 					a.withdraw(amt);
 				}
 				else {
-					System.out.println("Account not found da puluthi");
+					System.out.println("Account not found");
 				}
 			}
 			break;
@@ -91,3 +91,4 @@ public class Main {
 		sc.close();
 	}}
 	
+
